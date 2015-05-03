@@ -1,0 +1,20 @@
+/* //Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+h1 {
+  text-align: center;
+  padding: 40px 40px 40px 40px;
+  background-color: #777;
+  color: #FFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+table {
+	margin: 20px auto;
+	background-color: #FFF;
+	color: #000;
+	position: relative;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-spacing: 40px;
+}

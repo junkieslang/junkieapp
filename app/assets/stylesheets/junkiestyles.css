@@ -1,0 +1,277 @@
+* { box-sizing: border-box; }
+
+body {
+	background-color: #FFF;
+	color: #000;
+	position: relative;
+}
+
+
+.jumbotron p {
+	color: #000;
+}
+.jumbotron h1 {
+	color: white;
+}
+
+.header h1 {
+	text-align: center;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container p {
+	color: #000;
+}
+.container h2 {
+	color: #000;
+}
+
+
+selector {
+	position: relative;
+}
+
+.image {
+	display: inline-block;
+	float: center;
+}
+
+.column { 
+	display: inline-block;
+	width: 30%;
+	float: right;
+	padding: 0 20px;
+}
+
+.main-content {
+	min-height: 500px;
+}
+
+/*Typography*/
+h1,
+h2,
+h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.intro p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 21em;
+	font-weight:100%;
+	-web-margin-before: 0;
+}
+
+.junkie-slang-list {
+	text-align: left;
+}
+
+.junkie-slang h3 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #FFF;
+	padding: 10px 0;
+}
+
+
+/*Jumbotron*/
+.jumbotron h1 {
+	color: #fff;
+}
+
+.jumbotron contact {
+	padding-top: 175px;
+}
+
+/*img-responsive*/
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*Home*/
+.home h1 {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.home {
+	padding-top: 0px;
+}
+
+ul.a {
+	list-style-type: circle;
+}
+
+ol.a {
+	list-style-type: decimal-leading-zero;
+}
+
+#linksembeded {
+	padding: 5px 40px 100px 40px;
+}
+
+
+/*About*/
+/*small modal in navbar link*/
+#modalabout {
+	height: 600px;
+	width: 600px;
+}
+
+.row-modal {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.gray-button {
+	color: black;
+	background-color: lightgrey;
+	border-color: grey;
+}
+
+
+/*scroll junkie slang list*/
+.scroll {
+	padding: 20px 20px 20px 20px;
+    background-color: #fff;
+    height: 475px;
+    width: 100%;
+    min-width: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/*About form*/
+#junkieform {
+	padding: 0px 0px 200px 0px;
+}
+
+#slangform {
+	text-align: left;
+}
+
+#referencesform { 
+	width: 50%;
+	min-width: 200px;
+	padding: 6px 12px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#slangword {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px 12px;
+	width: 50%;
+	min-width: 200px;
+}
+
+/*Contact*/
+/*Background image*/
+#contact {
+	background-image: url(../img/junkielandscapecontact.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 0px;
+	padding-bottom: 350px;
+} 
+
+.contact h1 {
+	color: #fff;
+	padding: 80px 45px 10px 45px;
+}
+
+.contact h3 {
+	color: #fff;
+	padding: 75px 45px 60px 45px;
+}
+
+.contact a {
+	color: #fff;
+	padding: 0px 45px 0px 45px;
+}
+
+
+/*FAQ*/
+/*Accordion*/
+.panel-body {
+	font: bold;
+}
+
+.panel-heading {
+	background-color: #000;
+	color: #FFF;
+}
+
+.panel-title {
+	font-size: 16px;
+}
+
+.faq h1 {
+	padding: 80px 45px 50px 45px;
+}
+
+.faq h4 {
+	padding: 20px 45px 20px 45px;
+}
+
+.faq {
+	padding-top: 230px;
+	padding-bottom: 400px;
+}
+
+#faq {
+	max-width: 1170px;
+}
+
+
+
+footer {
+	padding-bottom: 20px;
+}
+
+
+/*local machine facebook buttons*/
+.fb_iframe_widget span,  
+.fb_iframe_widget span iframe {    
+     width: 100px !important;    
+     height: 20px !important; }
+
+
+
+.learn-more {
+	text-align: left;
+	float: left;
+}
+
+.modal-button {
+	float: right;
+	padding-left: 20px;
+}
+
+#releaseimage {
+	margin-left: 45px;
+}
+
+.modal-body {
+	height: 800px;
+	width: 800px;
+}
+
+#modalframe {
+	padding: 10px;
+	width: 100%;
+	height:100%;
+}

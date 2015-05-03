@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Colour</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!--
+    <tr>
+     <td>13</td>
+     <td>Volvo</td>
+     <td>Family Car</td>
+     <td><img src="http://..../volvo.jpg"></img></td>
+     <td>Black</td>
+    </tr>
+
+    <tr>
+     <td>14</td>
+     <td>Volvdadfsdo</td>
+     <td>Family Carasdfasdfa</td>
+     <td><img src="http://..../volvo.jpg"></img></td>
+     <td>Black</td>
+    </tr>
+    
+    <tr>
+     <td>15</td>
+     <td>Volvdadfsdo</td>
+     <td>Family Carasdfasdfa</td>
+     <td><img src="http://..../volvo.jpg"></img></td>
+     <td>Black</td>
+    </tr>
+  -->
+
+    <% @products.each do |product| %>
+    
+     <%= render partial: "products/product", locals: {product: product} %>
+     <% # alternative: 
+        # render "product" %>
+
+    <% end %>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

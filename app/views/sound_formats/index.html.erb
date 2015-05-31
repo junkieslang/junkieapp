@@ -1,0 +1,15 @@
+<h1>Sound Formats</h1>
+<%= link_to "New Sound Format", new_sound_format_path %>
+<table>
+	<tr>
+	  <th>Name</th>
+	  <th></th>
+	</tr>
+	<% @sound_formats.each do |sound_format| %>
+	  <tr>
+	  	<td><%= sound_format.name %></td>
+	  	<td><%= link_to "Edit", edit_sound_format_path(sound_format) %></td>
+	  </tr> 	
+	<% end %>  
+</table>	
+

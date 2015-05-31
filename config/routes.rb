@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :products
-  resources :object_releases
+  resources :sound_formats
+  resources :artists
+  resources :musical_albums
+
   get 'static_pages/about'
 
   get 'static_pages/contact'

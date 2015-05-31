@@ -11,27 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150503121557) do
+ActiveRecord::Schema.define(version: 20150531202830) do
 
-  create_table "object_releases", force: :cascade do |t|
+  create_table "artists", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "musical_album_formats", force: :cascade do |t|
+    t.integer  "musical_album_id"
+    t.integer  "sound_format_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "musical_album_tracks", force: :cascade do |t|
+    t.integer "musical_album_id"
+    t.integer "position"
+    t.string  "track_name"
+  end
+
+  create_table "musical_albums", force: :cascade do |t|
+    t.string   "catalog_number"
+    t.integer  "artist_id"
+    t.string   "title"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "orders", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "musical_album_id"
     t.float   "total"
   end
 
-  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
+  add_index "orders", ["musical_album_id"], name: "index_orders_on_musical_album_id"
 
-  create_table "products", force: :cascade do |t|
+  create_table "sound_formats", force: :cascade do |t|
     t.string   "name"
-    t.text     "description"
-    t.string   "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "colour"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
